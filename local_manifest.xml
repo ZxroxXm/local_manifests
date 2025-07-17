@@ -2,16 +2,28 @@
 <manifest>
 
     <!-- Remotes -->
-    <remote name="ZxroxXm"          fetch="https://github.com/ZxroxXm"      clone-depth="1" />
-    <remote name="LineageOS"        fetch="https://github.com/LineageOS"    clone-depth="1" />
+    <remote name="ZxroxXm" fetch="https://github.com/ZxroxXm" clone-depth="1" />
+    <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
 
-    <project path="device/samsung/a04e-kernel"         name="device_samsung_a04e-kernel"            remote="ZxroxXm"       revision="lineage-22.2" />
-    <project path="device/samsung/a04e"                name="device_samsung_a04e"                   remote="ZxroxXm"       revision="lineage-22.2" />
-    <project path="kernel/samsung/a04e"                name="kernel_samsung_a04e"                   remote="ZxroxXm"       revision="lineage-22.2" />
-    <project path="vendor/samsung/a04e"                name="vendor_samsung_a04e"                   remote="ZxroxXm"       revision="lineage-22.2" />
-    <project path="hardware/samsung"                   name="android_hardware_samsung"              remote="LineageOS"     revision="lineage-22.2" />
-    <project path="hardware/mediatek"                  name="android_hardware_mediatek"             remote="LineageOS"     revision="lineage-22.2" />
-    <project path="device/mediatek/sepolicy_vndr"      name="android_device_mediatek_sepolicy_vndr" remote="LineageOS"     revision="lineage-22.2" />
+    <!-- Device -->
+    <project path="device/samsung/a04e" name="device_samsung_a04e" remote="ZxroxXm" revision="lineage-22.2" />
 
+    <!-- Kernel -->
+    <project path="kernel/samsung/a04e" name="kernel_samsung_a04e" remote="ZxroxXm" revision="lineage-22.2" />
+
+    <!-- Prebuilt Kernel -->
+    <project path="device/samsung/a04e-kernel" name="device_samsung_a04e-kernel" remote="ZxroxXm" revision="lineage-22.2" />
+
+    <!-- Vendor -->
+    <project path="vendor/samsung/a04e" name="vendor_samsung_a04e" remote="ZxroxXm" revision="lineage-22.2" />
+
+    <!-- Sepolicy -->
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="LineageOS" revision="lineage-22.2" />
+
+    <!-- Hardware Samsung -->
+    <project path="hardware/samsung" name="android_hardware_samsung" remote="LineageOS" revision="lineage-22.2" />
+
+    <!-- Hardware Mediatek -->
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="LineageOS" revision="lineage-22.2" />
 
 </manifest>
